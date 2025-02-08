@@ -1,8 +1,44 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Teamfight Tactics";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">I play this game called 'TFT'</h1>
+    <p>Read a little more about it below!</p>
+
+    <h2>What is Teamfight Tactics, or TFT?</h2>
+    <img src="~/images/screenshot1.jpg" alt="Example TFT Screenshot" width="600" class="img-fluid rounded">
+
+    <p>
+        In a normal fighting game, you select a character and then pilot that character to the best of your ability
+        to try and defeat your opponent. TFT subverts this genre by instead only allowing you to select the character,
+        and then letting the computer decide how the fight goes. Because of this, the genre of TFT is considered an
+        "auto-battler", since you, the player, don't do the battling yourself. The goal therefore, is to create a team of
+        characters that will win every battle they come across, no matter if the computer doesn't actually know how best to
+        play the characters. From this formula, TFT adds their own twists to keep the game interesting, but you can read
+        more about that here:
+    </p>
+
+    <h2>Am I, the Author, good at TFT?</h2>
+    <img src="~/images/rank.png" alt="Author's TFT Rank" width="200" class="img-fluid rounded">
+    <br />
+    <p style="font-weight: bold;">No.</p>
+
+    <p>
+        But I am better than roughly 96% of any given player in the world. Of course, notoriety in any game is mostly only
+        determined by being in the top .01% of players, hence my own admittance than I am not "good" at TFT, as compared to
+        some tactical geniuses out there. Even so, I would love to teach this game to anyone interested in learning; I've
+        absorbed lots of material from different sources to achieve the rank I've reached in this game, and I can consolidate
+        all of that information searching that I've done into some neat coaching sessions for you. For those interested in
+        coaching, click here:
+    </p>
+    <a href="@Url.Action("TFTCoaching", "Home")" class="btn btn-warning mt-3">Go to TFT Calculator</a>
+
+    <h2>Why care about TFT?</h2>
+    <img src="~/images/popularity.png" alt="TFT Popularity" width="600" class="img-fluid rounded">
+    <p>
+        I mean, other than having a lot of fun with the game, it has a growing audience and an ever-growing prize pool for the
+        competitive players at the very peak, so it's certainly not dying out anytime soon and continues to change and evolve
+        every year to keep the game interesting.
+    </p>
 </div>

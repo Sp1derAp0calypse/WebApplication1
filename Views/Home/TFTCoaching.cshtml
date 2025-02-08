@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "TFT Coaching";
+}
+
+<div class="text-center">
+    <h1 class="display-4">TFT Coaching Calculator</h1>
+    <p>Use this calculator to see how much it would cost to receive TFT coaching from me.</p>
+
+    <div style="max-width: 400px; margin: auto; text-align: left;">
+        <label for="hours">Enter Hours of Coaching:</label>
+        <input type="number" id="hours" class="form-control" placeholder="Enter hours" min="1">
+
+        <label for="rate" class="mt-3">Rate per Hour:</label>
+        <input type="text" id="rate" class="form-control" value="$30" readonly>
+
+        <button id="calculate" class="btn btn-success mt-3">Calculate Total</button>
+
+        <label for="total" class="mt-3">Total Cost:</label>
+        <input type="text" id="total" class="form-control" readonly>
+
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary mt-3">Back to Home</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/tftCalculator.js"></script>
