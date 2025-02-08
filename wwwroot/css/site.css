@@ -18,5 +18,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #121212;
+    color: white; /* Ensure text is visible on dark background */
 }
